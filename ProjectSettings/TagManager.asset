@@ -58,3 +58,6 @@ TagManager:
   - name: HealthBar
     uniqueID: 2502237717
     locked: 0
+  - name: Canvas
+    uniqueID: 3458594257
+    locked: 0
