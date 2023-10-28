@@ -9,22 +9,44 @@ namespace Skilltree
 	{
 		private Image _image;
 		[SerializeField] private TMP_Text _countText;
-
 		[SerializeField] private int maxCount;
-
+		[SerializeField] private bool unlocked;
+		
 		private int currentCount;
+
+		[SerializeField] private Skill[] ChildSkills;
+		
 		private void Awake()
 		{
-			_image = GetComponent<Image>();	
+			_image = GetComponent<Image>();
+
+			if (unlocked)
+			{
+				Unlock();
+				
+			}
 		}
 
 		public bool Cliced()
 		{
-			if (currentCount < maxCount)
+			if (currentCount < maxCount && unlocked)
 			{
 				currentCount++;
 				_countText.text = $"{currentCount}/{maxCount}";
+
+				if (currentCount == maxCount)
+				{
+					foreach (var talent in ChildSkills)
+					{
+						if (talent != null)
+						{
+							talent.Unlock();
+						}
+					}
+				}
+				
 				return true;
+				
 			}
 			
 			return false;
@@ -41,6 +63,8 @@ namespace Skilltree
 		{
 			_image.color = Color.white;
 			_countText.color = Color.white;
+
+			unlocked = true;
 		}
 
 	}
