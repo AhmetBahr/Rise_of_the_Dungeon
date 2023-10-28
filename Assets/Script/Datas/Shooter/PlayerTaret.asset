@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e60b1fb62f4fdda1bc91caca599315, type: 3}
+  m_Name: PlayerTaret
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7862926197599922588, guid: db122d2eaa37d6c448f559b92bb3ef4f, type: 3}
+  reloadDelay: 1
+  bulletData: {fileID: 11400000, guid: cb8d7b1fbf77dae49b7cc35090ef3205, type: 2}

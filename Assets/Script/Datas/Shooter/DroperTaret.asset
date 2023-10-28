@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66e60b1fb62f4fdda1bc91caca599315, type: 3}
+  m_Name: DroperTaret
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7862926197599922588, guid: b9eaceb2c3335264ba2852df038c5533, type: 3}
+  reloadDelay: 5
+  bulletData: {fileID: 11400000, guid: 759df1adfccbec24d9269b6da205da5c, type: 2}
