@@ -19,6 +19,7 @@ namespace Skilltree
 		private void Awake()
 		{
 			_image = GetComponent<Image>();
+			_countText.text = $"{currentCount}/{maxCount}";
 
 			if (unlocked)
 			{
